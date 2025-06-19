@@ -1,0 +1,137 @@
+Calendar {
+  layout: vertical;
+  width: auto;
+  height: auto;
+  border: round $primary;
+  padding: 1;
+}
+
+#calendar_container {
+  layout: horizontal;
+  width: auto;
+  height: auto;
+  align: center middle;
+}
+
+#month_year {
+  text-align: center;
+  width: auto;
+  height: auto;
+  margin-bottom: 1;
+}
+
+#calendar_grid {
+  width: auto;
+  height: auto;
+  text-align: center; /* Center the text within the DataTable cells */
+  padding: 0;
+  align: left top;
+  margin: 0;
+}
+
+DataTable {
+  border: tall $secondary;
+  height: 100%; /* Ensure DataTable takes up available height */
+}
+
+DataTable.-header {
+  background: $panel;
+}
+
+DataTable.-header-label {
+  text-style: bold;
+}
+
+DataTable.-row:hover {
+  background: $secondary;
+}
+
+DataTable.-cell {
+  height: 5;
+  width: auto;
+  padding: 0;
+  margin: 0;
+  align: center top;
+  text-align: center;
+}
+
+Button {
+  width: 3;
+  height: 3;
+  margin: 1;
+}
+
+/* Dark mode styles */
+App:dark {
+  background: $surface;
+  color: $text;
+}
+
+Calendar:dark {
+  border: round $accent;
+}
+
+DataTable:dark {
+  border: tall $accent;
+}
+
+DataTable.-header:dark {
+  background: $surface-darken-1;
+}
+
+DataTable.-row:hover:dark {
+  background: $accent-lighten-1;
+}
+
+Button:dark {
+  background: $accent;
+  color: $text;
+}
+
+Button:hover:dark {
+  background: $accent-lighten-1;
+}
+
+.calendar-header, .calendar-cell {
+  width: 6;
+  min-width: 4;
+  height: 3;
+  min-height: 3;
+  text-align: center;
+  border: solid $primary;
+  padding: 0;
+  margin: 0;
+  background: $background;
+  color: $text;
+}
+
+.calendar-header {
+  background: $panel;
+  color: $accent;
+  border-top: solid $primary;
+  border-bottom: solid $primary;
+}
+
+.calendar-header.-weeknum, .calendar-cell.-weeknum {
+  background: $surface-darken-2;
+  color: $accent;
+  text-style: bold;
+}
+
+.calendar-cell.-weekend {
+  color: #ff4444;
+}
+
+.calendar-cell.-today {
+  background: $accent;
+  color: $background;
+  text-style: bold;
+  border: solid $accent;
+}
+
+.calendar-cell {
+  text-style: none;
+  align: center top;
+}
+
+/* 节假日高亮（假期内容用 [red] 标签，已在 Python 里处理） */
