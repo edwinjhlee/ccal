@@ -17,7 +17,7 @@ setup(
     ],
     entry_points={
         "console_scripts": [
-            "ccal=app:main_entry"
+            "ccal=ccal.app:main_entry"
         ]
     },
     classifiers=[
