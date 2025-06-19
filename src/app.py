@@ -223,3 +223,7 @@ class CalendarApp(App):
 if __name__ == "__main__":
     app = CalendarApp()
     app.run()
+
+def main_entry():
+    app = CalendarApp()
+    app.run()
