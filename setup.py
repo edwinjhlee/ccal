@@ -5,7 +5,7 @@ setup(
     version="0.1.0",
     description="一个带农历和节日的终端日历应用（Textual UI）",
     author="Li Junhao",
-    author_email="l@x-cmd.com",
+    author_email="li.junhao@x-cmd.com",
     license="AGPLv3",
     packages=find_packages(where="src"),
     package_dir={"": "src"},
