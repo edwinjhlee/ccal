@@ -1,17 +1,23 @@
-# ccal
+# rili
 
 一个带农历和节日的终端日历应用，基于 [Textual](https://github.com/Textualize/textual)。
 
-## 安装
+## 方法一: 采用 x-cmd
+
+```
+x rili
+```
+
+## 方法二: 安装
 
 ```bash
-pip install .
+pip install x-cmd-rili
 ```
 
 ## 使用
 
 ```bash
-ccal
+rili
 ```
 
 ## 依赖
