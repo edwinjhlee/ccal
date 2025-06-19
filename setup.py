@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 
 setup(
-    name="x-cmd-rili",
+    name="x-cmd-ccal",
     version="0.1.0",
     description="一个带农历和节日的终端日历应用（Textual UI）",
     author="Li Junhao",
